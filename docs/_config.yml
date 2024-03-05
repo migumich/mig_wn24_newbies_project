@@ -24,9 +24,11 @@ description: >- # this means to ignore newlines until "baseurl:"
   A super awesome projects for new members (WN24) of MIG.
 baseurl: /mig_wn24_newbies_project_spec/docs/ # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
 
 # Build settings
-theme: jekyll-theme-cayman
+theme: minima
 plugins:
   - jekyll-feed
 
