@@ -25,9 +25,12 @@
 # If you're on a unix based system, you can probably just use your package manager. 
 # If you're having trouble running Python after the install, check your path. 
 # How do I run a Python script? "python3 <filename>.py"!
+# How do I do x in Python? Refer to google, geeksforgeeks, etc!   
 # 
 # Feel free to ask any questions about the homework! 
-# If you have yet to take 281, some of the data  
+# If you have yet to take 281, some of the data structures might be foreign and 
+# that's a-okay. Google their basic functionality no need to get into the nitty 
+# gritty underlying implementation (unless you want to).
 
 # TODO: Return "Positive", "Negative", or "Zero", conditioned on the given param.
 def classify_number(n):
@@ -165,8 +168,8 @@ class Node:
 # Class inheritance.
 class DLNode(Node):
     def __init__(self, val=0, next=None, prev=Node ):
-        self.val = val
-        self.next = next        
+        super.__init__(self, val, next)
+        self.prev = prev      
 
 # Singly linked list in Python demo:
 class LL:
